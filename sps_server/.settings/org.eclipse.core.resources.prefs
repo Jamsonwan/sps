@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//src/com/qut/servlet/CheckIfAlreadyInGroupServlet.java=UTF-8
+encoding//src/com/qut/servlet/CompetitionCreatSrevlet.java=UTF-8
+encoding//src/com/qut/servlet/CreateGroupServlet.java=UTF-8
+encoding//src/com/qut/servlet/GetCodeServlet.java=UTF-8
+encoding//src/com/qut/servlet/LoginServlet.java=UTF-8
+encoding//src/com/qut/servlet/RegisterServlet.java=UTF-8
+encoding//src/com/qut/servlet/UpLoadFileServlet.java=UTF-8
