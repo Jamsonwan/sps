@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qut.sps.aty.SettingActivity">
+
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/change_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="17dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/change_password" />
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="17dp"
+                android:text="修改密码"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="17dp"
+                android:src="@drawable/more" />
+
+        </LinearLayout>
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#14008800"
+            android:layout_weight="0.16" />
+        <LinearLayout
+            android:id="@+id/change_info"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="28dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="36dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="17dp"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/setting_icon2"/>
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="8dp"
+                android:text="修改个人资料"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/more"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#14008800"/>
+        <LinearLayout
+            android:id="@+id/path"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="28dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="17dp"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/path2"/>
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="9dp"
+                android:text="缓存路径"
+                android:textColor="#000"
+                android:textSize="16sp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/more"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#14008800"
+            android:layout_marginTop="10dp"/>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/wifi3"
+                android:layout_alignBottom="@+id/net_choose" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="非wifi下进行播放"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="37dp"
+                android:textSize="16sp"
+                android:textColor="#000"
+                />
+            <Switch
+                android:id="@+id/net_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#14008800"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9a3402</color>
+    <color name="colorPrimaryDark">#9a3400</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorLightBlue">#87CEEB</color>
+    <color name="colorGray">#999999</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightGreen">#CCFFFF</color>
+    <color name="colorSoftBlue">#66CCFF</color>
+    <color name="colorTextSoftBlack">#333</color>
+    <color name="textColor">#333</color>
+    <color name="popupwindow1">#66CCCC</color>
+    <color name="popupwindow2">#00FFFFFF</color>
+    <color name="green">#339933</color>
+    <color name="redDark">#9A3402</color>
+</resources>

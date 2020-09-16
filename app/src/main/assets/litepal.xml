@@ -1,0 +1,18 @@
+<litepal>
+    <dbname value ="sps_db"/>
+    <version value = "1"/>
+    <list>
+        <mapping class="com.qut.sps.db.City"/>
+        <mapping class="com.qut.sps.db.County"/>
+        <mapping class="com.qut.sps.db.Province"/>
+        <mapping class="com.qut.sps.db.DownloadVideo"/>
+        <mapping class="com.qut.sps.db.NewInfoMessage"/>
+        <mapping class="com.qut.sps.db.GroupMessage"/>
+        <mapping class="com.qut.sps.db.FriendMessage"/>
+        <mapping class="com.qut.sps.db.MyFriends"/>
+        <mapping class="com.qut.sps.db.UsersInfo"/>
+        <mapping class="com.qut.sps.db.Groups"/>
+        <mapping class="com.qut.sps.db.NotifyMessage"/>
+        <mapping class="com.qut.sps.db.Costume"/>
+    </list>
+</litepal>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/y_background">
+
+    <ImageView
+        android:id="@+id/bing_pic_img_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+    <RelativeLayout
+        android:background="#8fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <ImageView
+            android:id="@+id/back_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ease_mm_title_back"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/y_show_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:visibility="visible" />
+        <ListView
+            android:id="@+id/y_group_info"
+            android:layout_marginTop="170dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/real_add_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="申请入团"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background"
+            android:visibility="gone"/>
+
+
+
+</RelativeLayout>

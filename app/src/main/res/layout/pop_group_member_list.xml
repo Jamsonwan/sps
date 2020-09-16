@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/pop_group_member_list_layout"
+    android:background="#8fff"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textSize="18sp"
+            android:id="@+id/pop_delete_member"
+            android:textColor="#333"
+            android:text="@string/delete_member"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="#dcdcdc"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <Button
+            android:textSize="18sp"
+            android:textColor="#333"
+            android:text="@string/cancel"
+            android:id="@+id/pop_cancel"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#dcdcdc"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

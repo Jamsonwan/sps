@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar"/>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/add_group_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/dashed"
+            android:layout_marginTop="60dp"
+            android:alpha="0.5"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/write_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="填写团名称（1~10个字）"
+            android:layout_marginTop="230dp"
+            android:maxLines="1"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/submit_group"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:layout_marginTop="400dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

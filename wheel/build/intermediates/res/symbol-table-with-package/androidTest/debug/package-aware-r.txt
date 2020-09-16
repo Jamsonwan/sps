@@ -1,0 +1,3 @@
+kankan.wheel.test
+int drawable wheel_bg 0x7f010000
+int drawable wheel_val 0x7f010001

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.qut.sps.aty.CompetitionContextActivity">
+
+    <include layout="@layout/title_bar"/>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:textSize="14sp"
+                   android:layout_centerInParent="true"
+                   android:text="点击添加海报"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <ImageView
+                   android:layout_margin="10dp"
+                   android:id="@+id/competition_creat_image"
+                   android:layout_width="match_parent"
+                   android:layout_height="150dp"
+                   android:scaleType="centerCrop"/>
+
+           </RelativeLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:textColor="@color/colorTextSoftBlack"
+                   android:textSize="16sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="比赛名称："/>
+
+               <EditText
+                   android:textSize="14sp"
+                   android:maxLines="1"
+                   android:id="@+id/competition_creat_name"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:textSize="16sp"
+                   android:textColor="@color/colorTextSoftBlack"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="比赛地点："/>
+
+               <EditText
+                   android:textSize="14sp"
+                   android:maxLines="2"
+                   android:id="@+id/competition_creat_place"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:inputType="textPostalAddress"
+                   />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_margin="10dp"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:textSize="16sp"
+                   android:textColor="@color/colorTextSoftBlack"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="联系方式："/>
+
+               <EditText
+                   android:textSize="14sp"
+                   android:id="@+id/competition_creat_tel"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:hint="请输入手机号码"
+                   android:inputType="phone"/>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_margin="10dp"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:textColor="@color/colorTextSoftBlack"
+                   android:textSize="16sp"
+                   android:id="@+id/textView2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="开始时间："/>
+
+               <TextView
+                   android:textSize="14sp"
+                   android:id="@+id/competition_creat_start"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:hint="选择开始时间"
+                   android:inputType="datetime"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_margin="10dp"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:textColor="@color/colorTextSoftBlack"
+                   android:textSize="16sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="结束时间："
+                   />
+
+               <TextView
+                   android:textSize="14sp"
+                   android:id="@+id/competition_create_end"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:hint="选择结束时间"
+                   android:inputType="datetime"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:textColor="@color/colorTextSoftBlack"
+                   android:textSize="16sp"
+                   android:id="@+id/textView14"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="比赛简介："/>
+
+               <EditText
+                   android:layout_marginTop="10dp"
+                   android:textSize="14sp"
+                   android:id="@+id/competition_creat_description"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:ems="50"
+                   android:gravity="top"
+                   android:inputType="none"
+                   android:lines="5"/>
+
+           </LinearLayout>
+
+           <Button
+               android:background="@drawable/button_background"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginBottom="10dp"
+               android:id="@+id/competition_submit"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="下一步"/>
+
+       </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>

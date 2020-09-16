@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="17dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:background="#ededed">
+
+        <EditText
+            android:id="@+id/query"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/em_seabar_input"
+            android:drawableLeft="@drawable/em_search_bar_icon_normal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="60dp"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            />
+
+        <ImageButton
+            android:id="@+id/search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="60dp"
+            android:background="@android:color/transparent"
+            android:padding="6dp"
+            android:src="@drawable/ease_search_clear"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/start_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:text="取消"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/y_find"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/y_look_friend_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

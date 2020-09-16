@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"/>
+    <item
+        android:id="@+id/users_information"
+        android:icon="@drawable/book"
+        android:iconTint="#fff"
+        android:textSize="18sp"
+        android:title="信息簿"/>
+    <item
+        android:id="@+id/notify_message"
+        android:icon="@drawable/date"
+        android:title="预约单"
+        android:textSize="18sp"/>
+    <item
+        android:id="@+id/check_update"
+        android:icon="@drawable/update2"
+        android:title="检测更新"
+        android:textSize="18sp"/>
+    <item
+        android:id="@+id/about_us"
+        android:icon="@drawable/about"
+        android:title="关于"
+        android:textSize="18sp"/>
+    <item
+        android:id="@+id/reflect"
+        android:icon="@drawable/reflect"
+        android:title="反馈"
+        android:textSize="18sp"/>
+    <item
+        android:id="@+id/change_account"
+        android:icon="@drawable/change1"
+        android:title="切换账号"
+        android:textSize="18sp"/>
+
+</menu>

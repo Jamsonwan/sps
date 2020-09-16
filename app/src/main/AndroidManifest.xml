@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qut.sps"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26" />
+    >
+
+    >
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1198170717178737#sps" />
+
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".aty.ChatRoomActivity" />
+        <activity
+            android:name=".aty.FriendInforActivity"
+            android:theme="@style/GroupInfoTheme" />
+        <activity android:name=".aty.GroupChatRoomActivity" />
+        <activity android:name=".aty.GroupInfoActivity" />
+        <activity android:name=".aty.GroupNoteActivity" />
+        <activity android:name=".aty.GroupMemberListActivity" />
+        <activity android:name=".aty.LetDanceActivity" />
+        <activity android:name=".aty.InviteFriendActivity" />
+        <activity android:name=".aty.MakeDateActivity" />
+        <activity android:name=".aty.SubmitActivity" />
+        <activity android:name=".aty.Notify" />
+        <activity android:name=".aty.SettingActivity" />
+        <activity android:name=".aty.AddFriendActivity" />
+        <activity
+            android:name=".aty.SearchFriendActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".aty.ShowAddFriendActivity" />
+        <activity android:name=".aty.AddGroupActivity" />
+        <activity android:name=".aty.ShowAddGroupActivity" />
+        <activity android:name=".aty.CreateGroupActivity" />
+
+        <service
+            android:name=".server.VisitService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".aty.WeatherMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".aty.WeatherActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".aty.ChangePasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".aty.ChangeUsersInfoActivity" />
+        <activity android:name=".aty.EditInfoActivity" />
+        <activity android:name=".aty.ChooseProfessionActivity" />
+        <activity android:name=".aty.AddressActivity" />
+        <activity android:name=".aty.GetVersionActivity" />
+
+        <receiver
+            android:name=".server.NotificationReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".aty.AboutUsActivity" />
+        <activity android:name=".aty.ReflectActivity" />
+        <activity android:name=".aty.UserIconActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.qut.sps.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".aty.SetTimeActivity" />
+
+        <service
+            android:name=".server.JudeLeaderService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".server.DanceService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".aty.ClothesActivity"
+            android:theme="@style/ClothesActivityTheme"></activity>
+        <activity android:name=".aty.CompetitionContextActivity"></activity>
+        <activity android:name=".aty.CompetitionCreatActivity"></activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".aty.DanceActivity" />
+        <activity android:name=".aty.NewInfoActivity" />
+        <activity android:name=".aty.InitActivity"></activity>
+        <activity
+            android:name=".aty.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".aty.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".aty.WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".aty.ForgetpwdActivity"></activity>
+        <activity android:name=".aty.AllVideoActivity" />
+        <activity
+            android:name=".aty.PlayVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"> <!-- 防止活动生命周期重启 -->
+
+        </activity>
+
+        <service
+            android:name=".server.NewMessageService"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

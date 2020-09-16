@@ -1,0 +1,128 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.qut.sps.aty.RegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="注册"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <EditText
+        android:textSize="15sp"
+        android:id="@+id/nickText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/toolbar1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/c"
+        android:ems="10"
+        android:hint="  请输入昵称"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:textSize="15sp"
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/nickText"
+        android:layout_margin="16dp"
+        android:background="@drawable/c"
+        android:ems="11"
+        android:hint="  请输入手机号"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        android:orientation="horizontal">
+
+        <EditText
+
+            android:textSize="15sp"
+            android:id="@+id/code_reg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/c"
+            android:hint="  请输入验证码"
+            android:inputType="textPersonName"/>
+
+        <Button
+            android:background="@drawable/shape"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/getCode_button"
+            style="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:alpha="25"
+            android:text="点击获取"/>
+    </LinearLayout>
+
+    <EditText
+
+        android:textSize="15sp"
+        android:id="@+id/pwd"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/layout"
+        android:layout_margin="16dp"
+        android:background="@drawable/c"
+        android:ems="14"
+        android:hint=" 请输入密码(6-12位字母或者数字)"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:textSize="15sp"
+        android:id="@+id/againPwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/pwd"
+        android:layout_alignStart="@+id/pwd"
+        android:layout_below="@+id/pwd"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/c"
+        android:ems="10"
+        android:hint="  请再次输入密码"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:background="@drawable/button_background"
+        android:id="@+id/register_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/againPwd"
+        android:layout_centerVertical="false"
+        android:layout_margin="16dp"
+        android:text="立即注册"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/add_friend"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_lieanerlayout">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/add_friend" />
+
+        <TextView
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/add_friend_text"
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="添加好友"
+            android:textSize="15sp"
+            android:textColor="@color/colorTextSoftBlack"/>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="10dp"
+        android:background="#dcdcdc"
+        android:layout_width="120dp"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/add_group"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_lieanerlayout">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/add_group" />
+        <TextView
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/add_group_text"
+            android:duplicateParentState="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加入团队"
+            android:textSize="15sp"
+            android:textColor="@color/colorTextSoftBlack" />
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="10dp"
+        android:background="#dcdcdc"
+        android:layout_width="120dp"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/create_group"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_lieanerlayout">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/create_group" />
+
+        <TextView
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/create_group_text"
+            android:duplicateParentState="true"
+            android:layout_gravity="center"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="@string/build_team"
+            android:textSize="15sp"
+            android:textColor="@color/colorTextSoftBlack" />
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#dcdcdc"
+        android:layout_width="120dp"
+        android:layout_height="1dp"/>
+</LinearLayout>

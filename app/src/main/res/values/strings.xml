@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">舞吧</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="account">账号</string>
+    <string name="nick_name">昵称</string>
+    <string name="nick_name_default">不知道</string>
+    <string name="sex">性别</string>
+    <string name="sex_default">不知是男还是女</string>
+    <string name="telephone_number">电话</string>
+    <string name="telephone_number_default">失联了</string>
+    <string name="age">年龄</string>
+    <string name="age_default">不知道是不是小鲜肉</string>
+    <string name="address">地址</string>
+    <string name="address_default">可能来自火星</string>
+    <string name="profession">职业</string>
+    <string name="profession_default">职业不知</string>
+    <string name="note">备注</string>
+    <string name="note_default">添加伙伴备注</string>
+    <string name="delete_member">删除好友</string>
+    <string name="cancel">取消</string>
+    <string name="my_friend_list">我的好友</string>
+    <string name="new_message">新消息</string>
+    <string name="other_message">附加消息</string>
+    <string name="build_team">创建团队</string>
+    <string name="choose_team">请选择一个团队</string>
+</resources>
