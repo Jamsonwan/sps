@@ -5,3 +5,15 @@
 ## Application Information
 ### login interface
    ![image](https://github.com/Jamsonwan/sps/blob/master/part%20interface/log_in.jpeg)
+
+### register interface
+   ![image](https://github.com/Jamsonwan/sps/blob/master/part%20interface/register.jpg)
+
+### Teaching video interface
+   ![image](https://github.com/Jamsonwan/sps/blob/master/part%20interface/video.jpg)
+   
+### chart room interface
+   ![image](https://github.com/Jamsonwan/sps/blob/master/part%20interface/chart_room.jpg)
+   
+### friends list interface
+   ![image](https://github.com/Jamsonwan/sps/blob/master/part%20interface/chart_list.jpg)
