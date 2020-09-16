@@ -4,16 +4,20 @@
   
 ## Application Information
 ### login interface
-   ![image](https://github.com/Jamsonwan/sps/blob/master/part%20interface/log_in.jpeg)
+   ![image](https://github.com/Jamsonwan/sps/blob/master/UI/log_in.jpeg)
 
 ### register interface
-   ![image](https://github.com/Jamsonwan/sps/blob/master/part%20interface/register.jpg)
+   ![image](https://github.com/Jamsonwan/sps/blob/master/UI/register.jpg)
 
 ### Teaching video interface
-   ![image](https://github.com/Jamsonwan/sps/blob/master/part%20interface/video.jpg)
+   ![image](https://github.com/Jamsonwan/sps/blob/master/UI/video.jpg)
    
 ### chart room interface
-   ![image](https://github.com/Jamsonwan/sps/blob/master/part%20interface/chart_room.jpg)
+   ![image](https://github.com/Jamsonwan/sps/blob/master/UI/chart_room.jpg)
    
 ### friends list interface
-   ![image](https://github.com/Jamsonwan/sps/blob/master/part%20interface/chart_list.jpg)
+   ![image](https://github.com/Jamsonwan/sps/blob/master/UI/chart_list.jpg)
+   
+   
+   
+Copyright@ SPS Team
